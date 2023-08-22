@@ -411,10 +411,10 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@mightymeld/runtime@^0.1.22":
-  version "0.1.22"
-  resolved "https://registry.yarnpkg.com/@mightymeld/runtime/-/runtime-0.1.22.tgz#bce7390b6b0aca2eccc74e2fae4c4ceed39d5318"
-  integrity sha512-Ptu+W9HEGMZ0WxIk/KExs6SCJ+yLTDYeGZ8HNwHUCEGou+rbhM7RTv57DOqDkQqy2RRbHjBVcoWw9gxZW8yaTQ==
+"@mightymeld/runtime@^0.1.23":
+  version "0.1.23"
+  resolved "https://registry.yarnpkg.com/@mightymeld/runtime/-/runtime-0.1.23.tgz#8fc969cc66cde75de44ed8c36b70a48f510de2e2"
+  integrity sha512-Ee3hUQzQ2MKiBFpQB/xu3zudZWI4EpJ2Z7CmCcu9XNlnBVANjeDSnNBfi+3+IOVGAF+ORbuT8hTYWgc/2UDuHg==
   dependencies:
     chokidar "^3.5.3"
 
@@ -438,6 +438,11 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
+
+"@remix-run/router@1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.8.0.tgz#e848d2f669f601544df15ce2a313955e4bf0bafc"
+  integrity sha512-mrfKqIHnSZRyIzBcanNJmVQELTnX+qagEDlcKO90RgRBVOZGSGvZKeDihTRfWcqoDn5N/NkUcwWTccnpN18Tfg==
 
 "@types/json-schema@^7.0.12":
   version "7.0.12"
@@ -1543,6 +1548,21 @@ react-refresh@^0.14.0:
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.14.0.tgz#4e02825378a5f227079554d4284889354e5f553e"
   integrity sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==
+
+react-router-dom@^6.15.0:
+  version "6.15.0"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.15.0.tgz#6da7db61e56797266fbbef0d5e324d6ac443ee40"
+  integrity sha512-aR42t0fs7brintwBGAv2+mGlCtgtFQeOzK0BM1/OiqEzRejOZtpMZepvgkscpMUnKb8YO84G7s3LsHnnDNonbQ==
+  dependencies:
+    "@remix-run/router" "1.8.0"
+    react-router "6.15.0"
+
+react-router@6.15.0:
+  version "6.15.0"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.15.0.tgz#bf2cb5a4a7ed57f074d4ea88db0d95033f39cac8"
+  integrity sha512-NIytlzvzLwJkCQj2HLefmeakxxWHWAP+02EGqWEZy+DgfHHKQMUoBBjUQLOtFInBMhWtb3hiUy6MfFgwLjXhqg==
+  dependencies:
+    "@remix-run/router" "1.8.0"
 
 react@^18.2.0:
   version "18.2.0"
