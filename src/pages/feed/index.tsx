@@ -14,7 +14,7 @@ const Feed = () => {
   return (
     <Layout>
       <h1 className="font-bold text-2xl my-6">TimeLine Feed</h1>
-      <div className="flex gap-4 items-start">
+      <div className="flex flex-col lg:flex-row gap-4 items-start">
         <ProfileCard User={Users} />
         <div className="flex flex-col gap-4">
           <div className="bg-white rounded-xl p-8">

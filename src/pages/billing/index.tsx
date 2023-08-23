@@ -25,13 +25,13 @@ const Billing = () => {
           </p>
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex flex-col md:flex-row gap-4">
           <Plan type="Free" amount={0} onClick={() => updatePlan("free")} />
           <Plan type="Basic" amount={8} onClick={() => updatePlan("basic")} />
           <Plan type="Pro" amount={12} onClick={() => updatePlan("pro")} />
         </div>
 
-        <div className=" w-2/3 mx-auto my-16 flex flex-col gap-8 bg-white rounded-xl p-6">
+        <div className=" md:w-2/3 mx-auto my-16 flex flex-col gap-8 bg-white rounded-xl p-6">
           <h2 className="text-3xl font-bold py-2 text-center">FAQ</h2>
           <FAQ />
         </div>

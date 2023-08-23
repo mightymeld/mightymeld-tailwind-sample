@@ -9,7 +9,7 @@ interface PlanProps {
 const Plan = ({ type, amount, onClick }: PlanProps) => {
   const planList = ["Create Contact", "Chat Support", "Email Alert"];
   return (
-    <div className="bg-white rounded-xl w-96 p-8 flex flex-col justify-betweenh-96">
+    <div className="bg-white rounded-xl md:w-96 p-8 flex flex-col justify-betweenh-96">
       <div className="">
         <h4 className="font-semibold text-3xl">{type} </h4>
         <div className="text-4xl font-bold mt-6">

@@ -28,7 +28,7 @@ const Account = () => {
   return (
     <Layout>
       <h2 className="font-bold text-2xl my-6">Account</h2>
-      <div className="flex gap-4 items-start">
+      <div className="flex flex-col lg:flex-row gap-4 items-start">
         <ProfileCard User={Users} />
         <div className="bg-white rounded-xl w-full p-6">
           <h3 className="text-xl font-medium my-6">Profile Information</h3>
@@ -65,9 +65,7 @@ const Account = () => {
             />
           </div>
           <div className="my-6 flex justify-end">
-            <button
-              className="bg-slate-700 py-2 px-6 text-white rounded-xl"
-            >
+            <button className="bg-slate-700 py-2 px-6 text-white rounded-xl">
               Save Details
             </button>
           </div>

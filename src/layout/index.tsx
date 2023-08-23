@@ -31,9 +31,9 @@ const Layout = ({ children }: LayoutProps) => {
   const { pathname } = useLocation();
   return (
     <div className=" flex flex-col lg:flex-row overflow-hidden h-screen bg-gray-100">
-      <div className="lg:w-64 bg-slate-800 rounded-r-xl text-white">
+      <div className="lg:w-64 bg-slate-800 rounded-r-xl text-white flex lg:flex-col items-center justify-between lg:justify-start">
         <h1 className="my-6 text-xl font-bold px-6">TIMELINE</h1>
-        <nav className="flex flex-col gap-2">
+        <nav className="flex lg:flex-col gap-2">
           {navLinks.map((item) => (
             <Link key={item.name} to={item.link}>
               <div
@@ -44,7 +44,7 @@ const Layout = ({ children }: LayoutProps) => {
                 }`}
               >
                 <img src={item.icon} alt="icon" className="w-5 h-5" />
-                <span className="">{item.name} </span>
+                <span className="hidden lg:block">{item.name} </span>
               </div>
             </Link>
           ))}
