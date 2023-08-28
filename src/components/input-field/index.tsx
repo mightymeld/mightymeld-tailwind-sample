@@ -13,7 +13,7 @@ const InputField = ({ label, value, onChange }: InputProps) => {
         value={value}
         type="text"
         id="floating_label"
-        className="block rounded-xl px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-white border appearance-none focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+        className="block rounded-lg  px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-white border appearance-none focus:outline-none focus:ring-0 focus:border-gray-600 peer"
         placeholder=" "
       />
       <label

@@ -20,7 +20,7 @@ const FAQ = () => {
             />
           </svg>
         </summary>
-        <p className=" p-3 rounded-xl">
+        <p className=" p-3 rounded-lg ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est
           commodi neque officia dolorem veritatis quas voluptas repellat nisi
           porro ipsa nulla, unde, nobis enim nesciunt optio exercitationem
@@ -46,7 +46,7 @@ const FAQ = () => {
             />
           </svg>
         </summary>
-        <p className=" p-3 rounded-xl">
+        <p className=" p-3 rounded-lg ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est
           commodi neque officia dolorem veritatis quas voluptas repellat nisi
           porro ipsa nulla, unde, nobis enim nesciunt optio exercitationem
@@ -72,7 +72,7 @@ const FAQ = () => {
             />
           </svg>
         </summary>
-        <p className=" p-3 rounded-xl">
+        <p className=" p-3 rounded-lg ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est
           commodi neque officia dolorem veritatis quas voluptas repellat nisi
           porro ipsa nulla, unde, nobis enim nesciunt optio exercitationem

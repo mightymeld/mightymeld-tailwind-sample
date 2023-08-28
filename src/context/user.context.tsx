@@ -1,4 +1,4 @@
-import React, { createContext, ReactNode, useReducer } from "react";
+import { createContext, Dispatch, ReactNode, useReducer } from "react";
 
 interface UserContextProps {
   children: ReactNode;
@@ -21,7 +21,7 @@ interface UserState {
 interface UserAction {
   type: string;
   payload?: UserType;
-  plan: string;
+  plan?: string;
 }
 
 const UserReducer = (state: UserState, action: UserAction): UserState => {
@@ -39,7 +39,7 @@ const UserReducer = (state: UserState, action: UserAction): UserState => {
         ...state,
         Users: {
           ...state.Users,
-          plan: action.plan,
+          plan: (action.plan as string),
         },
       };
     default:
@@ -63,7 +63,7 @@ const initialUserState: UserState = {
 
 export const UserContext = createContext<{
   state: UserState;
-  dispatch: React.Dispatch<UserAction>;
+  dispatch: Dispatch<UserAction>;
 }>({
   state: initialUserState,
   dispatch: () => {},

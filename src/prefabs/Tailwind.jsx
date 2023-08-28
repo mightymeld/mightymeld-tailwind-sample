@@ -67,7 +67,7 @@ export function Card() {
   const planList = ["Create Contact", "Chat Support", "Email Alert"];
 
   return (
-    <div className="bg-white rounded-xl w-96 p-8 flex flex-col justify-betweenh-96">
+    <div className="bg-white rounded-lg  w-96 p-8 flex flex-col justify-betweenh-96">
       <div className="">
         <h4 className="font-semibold text-3xl">Free</h4>
         <div className="text-4xl font-bold mt-6">
@@ -100,7 +100,7 @@ export function Card() {
           ))}
         </ul>
       </div>
-      <button className="bg-green-700 w-full text-white rounded-xl p-3 hover:opacity-90">
+      <button className="bg-green-700 w-full text-white rounded-lg  p-3 hover:opacity-90">
         Start Trial
       </button>
     </div>
@@ -128,7 +128,7 @@ export function Accordion() {
           />
         </svg>
       </summary>
-      <p className=" p-3 rounded-xl">
+      <p className=" p-3 rounded-lg ">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est
         commodi neque officia dolorem veritatis quas voluptas repellat nisi
         porro ipsa nulla, unde, nobis enim nesciunt optio exercitationem
@@ -140,7 +140,7 @@ export function Accordion() {
 
 export function Profile_Card() {
   return (
-    <div className="bg-white rounded-xl flex flex-col items-center justify-center p-4 w-72">
+    <div className="bg-white rounded-lg  flex flex-col items-center justify-center p-4 w-72">
       <div className="bg-green-700 rounded-full w-16 h-16 flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -174,13 +174,13 @@ export function Profile_Card() {
   );
 }
 
-export function FLoating_Label() {
+export function Floating_Label() {
   return (
     <div className="relative">
       <input
         type="text"
         id="floating_label"
-        className="block rounded-xl px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-white border-0 appearance-none focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+        className="block rounded-lg  px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-white border-0 appearance-none focus:outline-none focus:ring-0 focus:border-gray-600 peer"
         placeholder=" "
       />
       <label

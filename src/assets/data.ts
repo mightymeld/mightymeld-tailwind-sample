@@ -8,7 +8,7 @@ export interface Comment {
   message: string;
 }
 
-export interface Post {
+export interface IPost {
   id: string;
   image: string;
   author: string;
@@ -18,7 +18,7 @@ export interface Post {
   comments: Comment[];
 }
 
-export const post: Post[] = [
+export const post: IPost[] = [
   {
     id: "1",
     image: avatar,
@@ -39,7 +39,7 @@ export const post: Post[] = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est commodi neque officia dolorem veritatis quas voluptas repellat nisi porro ipsa nulla, unde, nobis enim nesciunt optio exercitationem blanditiis error.",
     comments: [
       {
-        id: "false21",
+        id: "21",
         image: avatar,
         author: "Michelin",
         time: "4 hours",
