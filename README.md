@@ -4,7 +4,7 @@ Mightymeld tailwind project sample
 
 ## Editing the app with MightyMeld
 
-1. Run `yarn` to install depenendencies
+1. Run `yarn` or `npm install` to install depenendencies
 
 2. Copy `.env.template` to `.env` and add your MightyMeld instance ID. If you don’t have an instance ID, [sign up for MightyMeld](https://www.mightymeld.com) or join the waitlist and you will receive one.
 
@@ -18,7 +18,7 @@ Mightymeld tailwind project sample
 
 with Npm
 
-1. Type `npm` to install dependencies.
+1. Type `npm install` to install dependencies.
 
 2. Run `npm run dev`, the app should then appear in a browser tab on [localhost:5173](localhost:5173)
 
