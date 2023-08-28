@@ -16,6 +16,14 @@ Mightymeld tailwind project sample
 
 ### Running the app without MightyMeld
 
+with Npm
+
+1. Type `npm` to install dependencies.
+
+2. Run `npm run dev`, the app should then appear in a browser tab on [localhost:5173](localhost:5173)
+
+with Yarn
+
 1. Type `yarn` to install dependencies.
 
 2. Run `yarn dev`, the app should then appear in a browser tab on [localhost:5173](localhost:5173)

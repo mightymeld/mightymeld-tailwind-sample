@@ -7,7 +7,7 @@ interface ProfileCardProps {
 
 const ProfileCard = ({ User }: ProfileCardProps) => {
   return (
-    <div className="bg-white rounded-lg  flex flex-col items-center justify-center p-4 w-60 mx-auto sticky top-20">
+    <div className="bg-gray-100 rounded-lg  flex flex-col items-center justify-center p-4 w-60 mx-auto sticky top-20">
       <div className="rounded-full w-16 h-16 flex items-center justify-center">
         <img src={avatar} alt="" />
       </div>
