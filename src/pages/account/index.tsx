@@ -29,7 +29,7 @@ const Account = () => {
       type: "update",
       payload: inputValues,
     });
-  }
+  };
 
   return (
     <Layout>
@@ -70,7 +70,10 @@ const Account = () => {
             />
           </div>
           <div className="my-6 flex justify-end">
-            <button onClick={updateAccount} className="bg-slate-700 py-2 px-6 text-white rounded-lg ">
+            <button
+              onClick={updateAccount}
+              className="bg-slate-700 py-2 px-6 text-white rounded-lg "
+            >
               Save Details
             </button>
           </div>

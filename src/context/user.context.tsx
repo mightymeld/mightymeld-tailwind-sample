@@ -39,7 +39,7 @@ const UserReducer = (state: UserState, action: UserAction): UserState => {
         ...state,
         Users: {
           ...state.Users,
-          plan: (action.plan as string),
+          plan: action.plan as string,
         },
       };
     default:

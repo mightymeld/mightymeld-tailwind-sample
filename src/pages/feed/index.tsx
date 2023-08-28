@@ -1,31 +1,31 @@
 import { useContext, useState } from "react";
-import { formatDistance, subDays } from 'date-fns'
+import { formatDistance, subDays } from "date-fns";
 import { PostContext } from "../../context/post.context";
 import Layout from "../../layout";
 import avatar from "../../assets/image-avatar.png";
 import LoveIcon from "../../components/icons/love-icon";
 import Textarea from "../../components/textarea";
 
-
-
 const Feed = () => {
-  const [value, setValue] = useState('')
+  const [value, setValue] = useState("");
   const { state, dispatch } = useContext(PostContext);
   const { Posts } = state;
 
   const handlePost = (e: string) => {
-    setValue(e)
-  }
+    setValue(e);
+  };
 
   const toggleLike = (id: string) => {
     dispatch({
       type: "togglelike",
       postId: id,
     });
-  }
+  };
 
   const addComments = () => {
-    const time =  formatDistance(subDays(new Date(), 0), new Date(), { addSuffix: true })
+    const time = formatDistance(subDays(new Date(), 0), new Date(), {
+      addSuffix: true,
+    });
     const payload = {
       id: value,
       image: avatar,
@@ -34,13 +34,13 @@ const Feed = () => {
       likes: false,
       message: value,
       comments: [],
-    }
+    };
 
     dispatch({
       type: "addPost",
       payload: payload,
     });
-  }
+  };
 
   return (
     <Layout>
@@ -50,10 +50,16 @@ const Feed = () => {
           <div className="bg-white rounded-lg  p-8">
             <div className="flex gap-4">
               <img src={avatar} alt="avatar" className="w-12 h-12" />
-              <Textarea value={value} onChange={(e) => handlePost(e.target.value)} />
+              <Textarea
+                value={value}
+                onChange={(e) => handlePost(e.target.value)}
+              />
             </div>
             <div className="my-6 flex justify-end">
-              <button onClick={addComments} className="bg-slate-700 py-2 px-6 text-white rounded-lg ">
+              <button
+                onClick={addComments}
+                className="bg-slate-700 py-2 px-6 text-white rounded-lg "
+              >
                 Post
               </button>
             </div>
@@ -71,10 +77,10 @@ const Feed = () => {
                 </div>
                 <div className="text-sm py-3">{item.message} </div>
                 <div className="flex gap-4">
-                  <button onClick={() => toggleLike(item.id)} >
-                    <LoveIcon fill={item.likes ? 'black' : 'none'} />
+                  <button onClick={() => toggleLike(item.id)}>
+                    <LoveIcon fill={item.likes ? "black" : "none"} />
                   </button>
-                  {item.likes ? '1 like' : ''}
+                  {item.likes ? "1 like" : ""}
                 </div>
                 <div className="my-5">
                   {item.comments?.map((item) => (

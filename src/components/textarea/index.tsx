@@ -1,10 +1,9 @@
-
 interface TextareaProps {
-  value: string,
-  onChange: (e) => void
+  value: string;
+  onChange: (e) => void;
 }
 
-const Textarea = ({value, onChange}: TextareaProps ) => {
+const Textarea = ({ value, onChange }: TextareaProps) => {
   return (
     <textarea
       id="message"

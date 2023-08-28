@@ -2,7 +2,7 @@ interface LoveIconProps {
   fill: string;
 }
 
-const LoveIcon = ({fill}: LoveIconProps) => {
+const LoveIcon = ({ fill }: LoveIconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

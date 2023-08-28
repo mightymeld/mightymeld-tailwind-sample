@@ -20,7 +20,7 @@ const Billing = () => {
 
   const toggleModal = () => {
     setShowModal(false);
-  }
+  };
 
   return (
     <Layout>
@@ -43,10 +43,7 @@ const Billing = () => {
           <FAQ />
         </div>
       </div>
-      {
-        showModal && <SuccessModal plan={Users.plan} onClick={toggleModal} />
-      }
-
+      {showModal && <SuccessModal plan={Users.plan} onClick={toggleModal} />}
     </Layout>
   );
 };
