@@ -16,9 +16,7 @@ const ProfileCard = ({ User }: ProfileCardProps) => {
         {User.firstname} {User.lastname}
       </p>
       <div className="font-light">{User.country} </div>
-      <div className="bg-green-100 text-xs py-1 px-3 rounded-full my-2 capitalize">
-        {User.plan}{" "}
-      </div>
+      <div className="bg-green-100 text-xs py-1 px-3 rounded-full my-2 capitalize">{User.plan} </div>
     </div>
   );
 };

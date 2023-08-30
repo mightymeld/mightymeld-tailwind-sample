@@ -27,9 +27,7 @@ const Billing = () => {
       <div className="">
         <div className="text-center my-10 py-4">
           <h2 className="text-3xl font-bold py-2">Upgrade your Plan</h2>
-          <p className=" font-light">
-            Join thousands of people using TimeLine to build their business{" "}
-          </p>
+          <p className=" font-light">Join thousands of people using TimeLine to build their business </p>
         </div>
 
         <div className="flex flex-col md:flex-row gap-4">

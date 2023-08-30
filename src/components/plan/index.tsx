@@ -16,36 +16,19 @@ const Plan = ({ type, amount, onClick }: PlanProps) => {
           {" "}
           ${amount} <span className="font-light text-sm">/ monthly</span>{" "}
         </div>
-        <div className="font-light py-2 text-sm">
-          To familiarize yourself with our tools.
-        </div>
+        <div className="font-light py-2 text-sm">To familiarize yourself with our tools.</div>
         <ul className="flex flex-col gap-2 my-16">
           {planList.map((item) => (
             <li key={item} className="flex text-sm items-center gap-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M20 6L9 17L4 12"
-                  stroke="green"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M20 6L9 17L4 12" stroke="green" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <span className="">{item}</span>
             </li>
           ))}
         </ul>
       </div>
-      <button
-        onClick={onClick}
-        className="bg-slate-700 w-full text-white rounded-lg  p-3 hover:opacity-90"
-      >
+      <button onClick={onClick} className="bg-slate-700 w-full text-white rounded-lg  p-3 hover:opacity-90">
         Start Plan
       </button>
     </div>

@@ -50,16 +50,10 @@ const Feed = () => {
           <div className="bg-white rounded-lg  p-8">
             <div className="flex gap-4">
               <img src={avatar} alt="avatar" className="w-12 h-12" />
-              <Textarea
-                value={value}
-                onChange={(e) => handlePost(e.target.value)}
-              />
+              <Textarea value={value} onChange={(e) => handlePost(e.target.value)} />
             </div>
             <div className="my-6 flex justify-end">
-              <button
-                onClick={addComments}
-                className="bg-slate-700 py-2 px-6 text-white rounded-lg "
-              >
+              <button onClick={addComments} className="bg-slate-700 py-2 px-6 text-white rounded-lg ">
                 Post
               </button>
             </div>
@@ -86,11 +80,7 @@ const Feed = () => {
                   {item.comments?.map((item) => (
                     <div key={item.id} className=" bg-gray-100 p-6 rounded-lg ">
                       <div className="flex gap-4">
-                        <img
-                          src={item.image}
-                          alt="avatar"
-                          className="w-12 h-12"
-                        />
+                        <img src={item.image} alt="avatar" className="w-12 h-12" />
                         <div className="flex items-center justify-between w-full">
                           <p className="font-semibold">{item.author} </p>
                           <p className="text-xs">{item.time} </p>

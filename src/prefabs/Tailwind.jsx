@@ -35,10 +35,9 @@ export function Heading3() {
 export function Paragraph() {
   return (
     <p className="mt-2 text-sm text-gray-800">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book.
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book.
     </p>
   );
 }
@@ -50,11 +49,7 @@ export function Horizontal_Stack() {
 export function Image() {
   return (
     <div className="w-200 h-200 overflow-hidden rounded-lg border border-gray-500">
-      <img
-        src="https://source.unsplash.com/random/200x200"
-        alt="Random"
-        className="h-full w-full object-cover"
-      />
+      <img src="https://source.unsplash.com/random/200x200" alt="Random" className="h-full w-full object-cover" />
     </div>
   );
 }
@@ -74,35 +69,19 @@ export function Card() {
           {" "}
           $0 <span className="font-light text-sm">/ monthly</span>{" "}
         </div>
-        <div className="font-light py-2 text-sm">
-          To familiarize yourself with our tools.
-        </div>
+        <div className="font-light py-2 text-sm">To familiarize yourself with our tools.</div>
         <ul className="flex flex-col gap-2 my-16">
           {planList.map((item) => (
             <li key={item} className="flex text-sm items-center gap-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M20 6L9 17L4 12"
-                  stroke="green"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M20 6L9 17L4 12" stroke="green" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <span className="">{item}</span>
             </li>
           ))}
         </ul>
       </div>
-      <button className="bg-green-700 w-full text-white rounded-lg  p-3 hover:opacity-90">
-        Start Trial
-      </button>
+      <button className="bg-green-700 w-full text-white rounded-lg  p-3 hover:opacity-90">Start Trial</button>
     </div>
   );
 }
@@ -119,20 +98,12 @@ export function Accordion() {
           fill="none"
           viewBox="0 0 10 6"
         >
-          <path
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M9 5 5 1 1 5"
-          />
+          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
         </svg>
       </summary>
       <p className=" p-3 rounded-lg ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est
-        commodi neque officia dolorem veritatis quas voluptas repellat nisi
-        porro ipsa nulla, unde, nobis enim nesciunt optio exercitationem
-        blanditiis error.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est commodi neque officia dolorem veritatis
+        quas voluptas repellat nisi porro ipsa nulla, unde, nobis enim nesciunt optio exercitationem blanditiis error.
       </p>
     </details>
   );
@@ -142,13 +113,7 @@ export function Profile_Card() {
   return (
     <div className="bg-white rounded-lg  flex flex-col items-center justify-center p-4 w-72">
       <div className="bg-green-700 rounded-full w-16 h-16 flex items-center justify-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          viewBox="0 0 24 24"
-          fill="none"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none">
           <path
             d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
             stroke="white"
@@ -167,9 +132,7 @@ export function Profile_Card() {
       </div>
       <p className="font-semibold text-2xl">Anika Howard</p>
       <div className="font-light">Los Angeles</div>
-      <div className="bg-green-100 text-xs py-1 px-3 rounded-full my-2">
-        free
-      </div>
+      <div className="bg-green-100 text-xs py-1 px-3 rounded-full my-2">free</div>
     </div>
   );
 }
@@ -237,17 +200,13 @@ export function Tab() {
       <div className="flex gap-2 border-b">
         <div
           onClick={showTabOne}
-          className={`cursor-pointer py-2 border-b-2 ${
-            tab === 1 ? "border-green-700" : "border-transparent"
-          }`}
+          className={`cursor-pointer py-2 border-b-2 ${tab === 1 ? "border-green-700" : "border-transparent"}`}
         >
           Tab One
         </div>
         <div
           onClick={showTabTwo}
-          className={`cursor-pointer py-2 border-b-2 ${
-            tab === 2 ? "border-green-700" : "border-transparent"
-          }`}
+          className={`cursor-pointer py-2 border-b-2 ${tab === 2 ? "border-green-700" : "border-transparent"}`}
         >
           Tab Two
         </div>

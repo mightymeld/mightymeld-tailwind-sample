@@ -72,9 +72,5 @@ export const UserContext = createContext<{
 export const UserProvider = ({ children }: UserContextProps) => {
   const [state, dispatch] = useReducer(UserReducer, initialUserState);
 
-  return (
-    <UserContext.Provider value={{ state, dispatch }}>
-      {children}
-    </UserContext.Provider>
-  );
+  return <UserContext.Provider value={{ state, dispatch }}>{children}</UserContext.Provider>;
 };

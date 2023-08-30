@@ -63,9 +63,5 @@ export const PostContext = createContext<{
 export const PostProvider = ({ children }: PostContextProps) => {
   const [state, dispatch] = useReducer(PostReducer, initialPostState);
 
-  return (
-    <PostContext.Provider value={{ state, dispatch }}>
-      {children}
-    </PostContext.Provider>
-  );
+  return <PostContext.Provider value={{ state, dispatch }}>{children}</PostContext.Provider>;
 };

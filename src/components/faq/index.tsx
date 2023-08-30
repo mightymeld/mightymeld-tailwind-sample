@@ -11,20 +11,12 @@ const FAQ = () => {
             fill="none"
             viewBox="0 0 10 6"
           >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M9 5 5 1 1 5"
-            />
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
           </svg>
         </summary>
         <p className=" p-3 rounded-lg ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est
-          commodi neque officia dolorem veritatis quas voluptas repellat nisi
-          porro ipsa nulla, unde, nobis enim nesciunt optio exercitationem
-          blanditiis error.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est commodi neque officia dolorem veritatis
+          quas voluptas repellat nisi porro ipsa nulla, unde, nobis enim nesciunt optio exercitationem blanditiis error.
         </p>
       </details>
       <details className="list-none bg-white border-b border-slate-200">
@@ -37,20 +29,12 @@ const FAQ = () => {
             fill="none"
             viewBox="0 0 10 6"
           >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M9 5 5 1 1 5"
-            />
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
           </svg>
         </summary>
         <p className=" p-3 rounded-lg ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est
-          commodi neque officia dolorem veritatis quas voluptas repellat nisi
-          porro ipsa nulla, unde, nobis enim nesciunt optio exercitationem
-          blanditiis error.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est commodi neque officia dolorem veritatis
+          quas voluptas repellat nisi porro ipsa nulla, unde, nobis enim nesciunt optio exercitationem blanditiis error.
         </p>
       </details>
       <details className="list-none bg-white border-b border-slate-200">
@@ -63,20 +47,12 @@ const FAQ = () => {
             fill="none"
             viewBox="0 0 10 6"
           >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M9 5 5 1 1 5"
-            />
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
           </svg>
         </summary>
         <p className=" p-3 rounded-lg ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est
-          commodi neque officia dolorem veritatis quas voluptas repellat nisi
-          porro ipsa nulla, unde, nobis enim nesciunt optio exercitationem
-          blanditiis error.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est commodi neque officia dolorem veritatis
+          quas voluptas repellat nisi porro ipsa nulla, unde, nobis enim nesciunt optio exercitationem blanditiis error.
         </p>
       </details>
     </div>
