@@ -1,6 +1,6 @@
 {
   "run": "npm run dev",
-  "include": ["src"],
+  "include": ["src", ".prettierrc.json"],
   "run_prettier": true,
   "web_server_url": "http://localhost:5173",
   "main_branch": "main",
