@@ -3,7 +3,6 @@
   "include": ["src", ".prettierrc.json"],
   "run_prettier": true,
   "web_server_url": "http://localhost:5173",
-  "main_branch": "main",
   "prefab_dir": "src/prefabs",
   "tailwind": true
 }
