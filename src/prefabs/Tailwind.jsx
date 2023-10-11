@@ -58,34 +58,6 @@ export function Vertical_Stack() {
   return <div className="flex flex-col space-y-4" />;
 }
 
-export function Card() {
-  const planList = ["Create Contact", "Chat Support", "Email Alert"];
-
-  return (
-    <div className="bg-white rounded-lg  w-96 p-8 flex flex-col justify-betweenh-96">
-      <div className="">
-        <h4 className="font-semibold text-3xl">Free</h4>
-        <div className="text-4xl font-bold mt-6">
-          {" "}
-          $0 <span className="font-light text-sm">/ monthly</span>{" "}
-        </div>
-        <div className="font-light py-2 text-sm">To familiarize yourself with our tools.</div>
-        <ul className="flex flex-col gap-2 my-16">
-          {planList.map((item) => (
-            <li key={item} className="flex text-sm items-center gap-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M20 6L9 17L4 12" stroke="green" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-              <span className="">{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <button className="bg-green-700 w-full text-white rounded-lg  p-3 hover:opacity-90">Start Trial</button>
-    </div>
-  );
-}
-
 export function Accordion() {
   return (
     <details className="list-none bg-white ">
@@ -182,39 +154,6 @@ export function Search() {
         className="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-0 focus:border-0 "
         placeholder="Search "
       />
-    </div>
-  );
-}
-
-export function Tab() {
-  let tab = 1;
-  const showTabOne = () => {
-    tab = 1;
-  };
-  const showTabTwo = () => {
-    tab = 2;
-  };
-
-  return (
-    <div className="p-2">
-      <div className="flex gap-2 border-b">
-        <div
-          onClick={showTabOne}
-          className={`cursor-pointer py-2 border-b-2 ${tab === 1 ? "border-green-700" : "border-transparent"}`}
-        >
-          Tab One
-        </div>
-        <div
-          onClick={showTabTwo}
-          className={`cursor-pointer py-2 border-b-2 ${tab === 2 ? "border-green-700" : "border-transparent"}`}
-        >
-          Tab Two
-        </div>
-      </div>
-      <div className="py-2">
-        {tab === 1 && <div className="">Content 1</div>}
-        {tab === 2 && <div className="">Content 2</div>}
-      </div>
     </div>
   );
 }
