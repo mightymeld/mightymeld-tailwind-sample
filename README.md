@@ -4,7 +4,7 @@ Mightymeld tailwind project sample
 
 ## Editing the app with MightyMeld
 
-1. Run `npm install` to install depenendencies.
+1. Run `npm install` to install dependencies.
 
 2. Download a `mightymeld.secrets` file from the [MightyMeld Portal](https://mightymeld.app) and place it in the root directory.
 
