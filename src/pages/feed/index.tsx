@@ -1,10 +1,10 @@
-import { useContext, useState } from "react";
 import { formatDistance, subDays } from "date-fns";
-import { PostContext } from "../../context/post.context";
-import Layout from "../../layout";
+import { useContext, useState } from "react";
 import avatar from "../../assets/image-avatar.png";
 import LoveIcon from "../../components/icons/love-icon";
 import Textarea from "../../components/textarea";
+import { PostContext } from "../../context/post.context";
+import Layout from "../../layout";
 
 const Feed = () => {
   const [value, setValue] = useState("");
@@ -40,6 +40,7 @@ const Feed = () => {
       type: "addPost",
       payload: payload,
     });
+    setValue("");
   };
 
   return (
@@ -53,7 +54,7 @@ const Feed = () => {
               <Textarea value={value} onChange={(e) => handlePost(e.target.value)} />
             </div>
             <div className="my-6 flex justify-end">
-              <button onClick={addComments} className="bg-slate-700 py-2 px-6 text-white rounded-lg ">
+              <button onClick={addComments} className="bg-red-500 py-2 px-6 text-white rounded-10 lg">
                 Post
               </button>
             </div>
@@ -83,7 +84,7 @@ const Feed = () => {
                         <img src={item.image} alt="avatar" className="w-12 h-12" />
                         <div className="flex items-center justify-between w-full">
                           <p className="font-semibold">{item.author} </p>
-                          <p className="text-xs">{item.time} </p>
+                          <p className="text-xs text-blue-500">{item.time} </p>
                         </div>
                       </div>
                       <div className="text-sm py-3">{item.message} </div>
